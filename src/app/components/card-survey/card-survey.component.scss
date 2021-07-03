@@ -1,0 +1,95 @@
+.card-survey{
+    border-radius: 7px;
+    padding: 2rem 1rem;
+    height: 350px;
+    background-color: #fff;
+
+    &__header {
+        margin: 0;
+
+        h4 {
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.3rem;
+        }
+
+        label{
+            text-align: center;
+            font-size: 0.7rem;
+            font-weight: 400;
+            line-height: 0.8rem;
+            color: #8c8c8c;
+
+        }
+    }
+
+    &__indicators {
+        margin: 1rem 0;
+        h5 {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: .9rem;
+            font-weight: 500;
+            line-height: 1.3rem;
+        }
+
+        .progress-chart{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__options {
+        margin: 1rem 0;
+        h5 {
+            text-align: left;
+            font-size: .8rem;
+            font-weight: 500;
+            line-height: 1.3rem;
+        }
+    }
+
+    nz-progress {
+        margin-right: 8px;
+        margin-bottom: 8px;
+        display: inline-block;
+      }
+
+      
+}
+
+.card-new-survey{
+    border-radius: 7px;
+    padding: 2rem 1rem;
+    height: 350px;
+    background-color: #fff;
+    border: 1px dashed #8c8c8c;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn-add-survey{
+        cursor: pointer;
+        display: block;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 1px dashed #8c8c8c;
+
+        i{
+            text-align: center !important;
+            font-size: 2rem;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .btn-add-survey:hover{
+        border-color: #40189D;
+        color:#40189D;
+    }
+}

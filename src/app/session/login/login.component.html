@@ -1,0 +1,111 @@
+<section id="login" class="login">
+    <div class="login__background">
+      <div class="row align-items-center h-100">
+        <div
+          class="col-lg-5 col-md-12 align-self-center animated fadeIn d-none d-lg-block"
+        >
+          <img
+            src="../../assets/images/logos/light-large-logo.png"
+            class="img-fluid d-block mx-auto"
+          />
+        </div>
+        <div class="col-lg-7 col-md-12 align-self-center animated fadeIn form-col">
+          <div class="container">
+            <div class="card p-xs-2 p-sm-5 mx-auto">
+              <div class="card-body">
+                <img
+                  src="../../assets/images/logos/dark-large-logo.png"
+                  class="img-fluid mr-auto logo-form d-none mb-2"
+                />
+                <h1 class="text-dark">
+                  Inicio de sesión
+                </h1>
+                <p class="text-dark mb-5">
+                  ¿Eres un nuevo usuario? <a [routerLink]="['/register']"> Crear una cuenta </a>
+                </p>
+  
+                <form
+                  nz-form
+                  [formGroup]="validateForm"
+                  class="login-form"
+                  (ngSubmit)="submitForm()"
+                >
+                  <nz-form-item class="mb-3" >
+                    <nz-form-control
+                      nzErrorTip="Ingresa dirección de correo electrónico válido"
+                      [nzSpan]="24"
+                    >
+                      <nz-input-group nzPrefixIcon="mail">
+                        <input
+                          type="text"
+                          nz-input
+                          formControlName="userName"
+                          placeholder="Dirección de correo electrónico"
+                        />
+                      </nz-input-group>
+                    </nz-form-control>
+                  </nz-form-item>
+                  <nz-form-item class="mb-3">
+                    <nz-form-control nzErrorTip="Ingresa tu contraseña"  [nzSpan]="24">
+                      <nz-input-group nzPrefixIcon="lock">
+                        <input
+                          type="password"
+                          nz-input
+                          formControlName="password"
+                          placeholder="Contraseña"
+                        />
+                      </nz-input-group>
+                    </nz-form-control>
+                  </nz-form-item>
+                  <div nz-row class="login-form-margin">
+                    <div nz-col [nzSpan]="12">
+                      <nz-switch
+                        nzSize="small"
+                        formControlName="remember"
+                      ></nz-switch>
+                      <span class="ml-3">Recuerdame</span>
+                    </div>
+                    <div nz-col [nzSpan]="12">
+                      <a class="login-form-forgot" [routerLink]="['/recover-pass']">¿Olvidaste tu contraseña?</a>
+                    </div>
+                  </div>
+                  <button
+                    [disabled]="loading"
+                    type="submit"
+                    class="btn btn-primary btn-rounded btn-block"
+                  >
+                    <i *ngIf="loading" nz-icon [nzType]="'loading'"></i>
+                    <span *ngIf="!loading">Iniciar sesión</span>
+                  </button>
+                  <div class="mt-3">
+                    <small class="text-muted mt-xs-2">
+                      Protegido por reCAPTCHA y sujeto a
+                      <a
+                        class=""
+                        href="https://policies.google.com/privacy?hl=es"
+                        aria-label="Política de privacidad de Google"
+                        rel="noopener"
+                        target="_blank"
+                        >Política de privacidad</a
+                      >
+                      y
+                      <a
+                        class=""
+                        href="https://policies.google.com/terms?hl=es"
+                        aria-label="Condiciones del servicio de Google"
+                        rel="noopener"
+                        target="_blank"
+                        >Condiciones del servicio</a
+                      >
+                      de Google.
+                    </small>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

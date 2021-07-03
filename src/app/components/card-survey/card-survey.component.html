@@ -1,0 +1,36 @@
+<div *ngIf="!viewNewSurveyCard" class="card-survey">
+  <div *ngIf="viewDetailSurvey">
+    <div class="card-survey__header">
+      <h4>Encuesta evaluación dummy</h4>
+      <label
+        >Encuesta para medir satisfacción de los clientes del servicio del turno
+        de mañana en la terraza
+      </label>
+    </div>
+
+    <hr/>
+
+    <div *ngIf="viewIndicators" class="card-survey__indicators mx-auto">
+      <h5>Indicadores CSAT</h5>
+      <div class="progress-chart">
+          <nz-progress [nzPercent]="5" [nzStrokeColor]="{ '0%': '#ff4d4f', '100%': '#ff4d4f' }" nzType="circle" [nzWidth]="50"></nz-progress>
+          <nz-progress [nzPercent]="35" nzType="circle" [nzWidth]="50"></nz-progress>
+          <nz-progress [nzPercent]="60" [nzStrokeColor]="{ '0%': '#87d068', '100%': '#87d068' }" nzType="circle" [nzWidth]="50"></nz-progress>
+      </div>
+    </div>
+  </div>
+
+  <hr *ngIf="(viewDetailSurvey && viewOptionsSurvey) || viewRecentActivity" />
+
+  <div *ngIf="viewRecentActivity" class="card-survey__options">
+    <h5>Opciones</h5>
+  </div>
+
+  <div *ngIf="viewRecentActivity" class="card-survey__activity"></div>
+</div>
+
+<div *ngIf="viewNewSurveyCard" class="card-new-survey">
+    <div class="btn-add-survey m-auto">
+        <i nz-icon [nzType]="'plus'" nzTheme="outline"></i>
+    </div>
+</div>

@@ -1,0 +1,169 @@
+$mainColor: #040D1A;
+$secondaryColor: #eee;
+$lightColor: #fff;
+$colorDark: #1d2231;
+$textGrey: #bfbfbf;
+$searchColor: #e3e3e3;
+
+$fontWeightLight: 300;
+$fontWeightSemiBold: 500;
+
+
+.sidebar {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  height: 100vh;
+  background-color: $mainColor;
+  //border-radius: 0px 30px 30px 0px;
+
+  .sidebar-brand {
+    height: 90px;
+    padding: 1rem 1rem 1rem 2rem;
+    color: $lightColor;
+    margin-bottom: 2rem;
+
+    img{
+      width: 150px;
+    }
+
+  }
+
+  .sidebar-menu {
+    li {
+      width: 100%;
+      margin-bottom: 1.7rem;
+      //padding-left: 3rem;
+
+      i{
+        vertical-align: 2px !important;
+        //margin-left: 2rem;
+      }
+
+      a {
+        padding-left: 1rem;
+        display: block;
+        color: $lightColor;
+        font-size: 1rem;
+        font-weight: $fontWeightLight;
+      }
+  
+      a.active {
+        background-color: $secondaryColor;
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+        color: $mainColor;
+        font-weight: $fontWeightSemiBold;
+        border-radius: 30px 0px 0px 30px;
+      }
+    }
+
+
+    // a span:first-child {
+    //   font-size: 1.5rem;
+    //   padding-right: 1rem;
+    // }
+  }
+}
+
+.main-content {
+ // margin-left: 345px;
+ height: 100vh !important;
+
+  header {
+    background-color: $mainColor;
+    .main-header{
+      background-color: $secondaryColor;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.8rem 1.8rem;
+      border-radius: 30px 0 0 0;
+      box-shadow: 2px 1px 3px rgba(0,0,0,0.2);
+    
+      label{
+        margin: 0;
+        font-size: 20px;
+      }
+
+      .menu-wrapper{
+        img {
+          width: 25px;
+          margin-right: 3rem;
+        }
+      }
+  
+    }
+  }
+
+  main {
+    margin: 1.8rem;
+  }
+
+  .search-wrapper {
+    //border: 1px solid #ccc;
+    border-radius: 30px;
+    display: flex;
+    overflow-x: hidden;
+    background-color: $searchColor;
+
+    input {
+      height: 100%;
+      padding: 0.1rem 0.5rem;
+      border: none;
+      outline: none;
+      background-color: $searchColor;
+      font-size: 0.8rem;
+    }
+
+    i {
+      display: inline-block;
+      padding: 0rem 1rem;
+      font-size: 1.5rem;
+      opacity: 0.6;
+      margin-bottom: auto !important;
+      margin-top: auto !important;
+    }
+  }
+
+  .user-wrapper {
+    display: flex;
+    align-items: center;
+
+    img {
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+
+    .profile-title{
+      display: block;
+      h4{
+        display: block;
+      }
+      small {
+        display: block;
+        color: $textGrey;
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .sidebar {  
+    .sidebar-menu li a span { 
+      font-size: .9rem;    
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-content header .main-header .menu-wrapper img {
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-content header .main-header .menu-wrapper img {
+    margin-right: 1rem;
+  }
+}

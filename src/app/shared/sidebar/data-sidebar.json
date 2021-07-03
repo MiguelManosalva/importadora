@@ -1,0 +1,39 @@
+{
+    "menu": [
+        {
+            "titulo": "Dashboard",
+            "url": "/dashboard",
+            "submenu": []
+        },
+        {
+            "titulo": "Encuestas",
+            "url": "/survey",
+            "submenu": []
+        },
+        {
+            "titulo": "Preguntas",
+            "url": "/preguntas",
+            "submenu": []
+        },
+        {
+            "titulo": "Respuestas",
+            "url": "/respuestas",
+            "submenu": []
+        },
+        {
+            "titulo": "Libro digital",
+            "url": "/libro-digital",
+            "submenu": []
+        },
+        {
+            "titulo": "Usuarios",
+            "url": "/usuarios",
+            "submenu": []
+        },
+        {
+            "titulo": "hware",
+            "url": "/interno",
+            "submenu": []
+        }
+    ]
+}
