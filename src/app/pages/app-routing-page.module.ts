@@ -8,10 +8,12 @@ const routes: Routes = [{
   path: 'app',
   component: PagesComponent,
   children: [
-    { path: 'dashboard', component: DashboardComponent, data: { titulo: 'Inicio' } },
-    { path: 'survey', component: SurveyComponent, data: { titulo: 'Encuestas' } },
+    { path: 'productos', component: DashboardComponent, data: { titulo: 'Productos' } },
+    { path: 'pedidos', component: SurveyComponent, data: { titulo: 'Pedidos' } },
+    { path: 'bodega', component: SurveyComponent, data: { titulo: 'Bodega' } },
+    { path: 'perfil', component: SurveyComponent, data: { titulo: 'Perfil' } },
 
-    { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+    { path: '', redirectTo: 'productos', pathMatch: 'full' },
     { path: '*', redirectTo: '', pathMatch: 'full' }
   ]
 },
