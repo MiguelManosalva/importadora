@@ -1,7 +1,7 @@
 {
     "products": [
         {
-            "name": "Cable telefono M13",
+            "nombre": "Cable telefono M13",
             "descripcion": "",
             "imagen": "",
             "stock": 99,
@@ -9,7 +9,7 @@
             "ofertaPorcentaje": 20
         },
         {
-            "name": "Monitor LG XM33",
+            "nombre": "Monitor LG XM33",
             "descripcion": "",
             "imagen": "",
             "stock": 15,
@@ -17,7 +17,7 @@
             "ofertaPorcentaje": 25
         },
         {
-            "name": "Mando PS4 BLUE X8",
+            "nombre": "Mando PS4 BLUE X8",
             "descripcion": "",
             "imagen": "",
             "stock": 23,
@@ -25,7 +25,7 @@
             "ofertaPorcentaje": 10
         },
         {
-            "name": "Luces LED IP3",
+            "nombre": "Luces LED IP3",
             "descripcion": "",
             "imagen": "",
             "stock": 99,
@@ -33,7 +33,7 @@
             "ofertaPorcentaje": 5
         },
         {
-            "name": "Teclado mécanico Cougar M13",
+            "nombre": "Teclado mécanico Cougar M13",
             "descripcion": "",
             "imagen": "",
             "stock": 20,
@@ -41,7 +41,7 @@
             "ofertaPorcentaje": 0
         },
         {
-            "name": "Audifonos Marshall B9",
+            "nombre": "Audifonos Marshall B9",
             "descripcion": "",
             "imagen": "",
             "stock": 81,
@@ -49,7 +49,7 @@
             "ofertaPorcentaje": 0
         },
         {
-            "name": "Soporte Computardo X3",
+            "nombre": "Soporte Computardo X3",
             "descripcion": "",
             "imagen": "",
             "stock": 38,
@@ -57,7 +57,7 @@
             "ofertaPorcentaje": 0
         },
         {
-            "name": "Camara HD 4K MX13",
+            "nombre": "Camara HD 4K MX13",
             "descripcion": "",
             "imagen": "",
             "stock": 92,
@@ -65,7 +65,7 @@
             "ofertaPorcentaje": 0
         },
         {
-            "name": "Reloj inteligente UVA 8",
+            "nombre": "Reloj inteligente UVA 8",
             "descripcion": "",
             "imagen": "",
             "stock": 9,
@@ -73,7 +73,7 @@
             "ofertaPorcentaje": 0
         },
         {
-            "name": "Libro digital MV13",
+            "nombre": "Libro digital MV13",
             "descripcion": "",
             "imagen": "",
             "stock": 3,

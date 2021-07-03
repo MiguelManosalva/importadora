@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     // const userStorage = sessionStorage.getItem('s3s10n3mp4t1');
     // if (userStorage) {
     //   _session.user = JSON.parse(userStorage);
-    //   this.router.navigate([`/app/dashboard`]);
+    //   this.router.navigate([`/app/productos`]);
     // }
 
   }
@@ -64,11 +64,11 @@ export class LoginComponent implements OnInit {
         }
         
         this.loading = false;
-        this.router.navigate([`/app/dashboard`]);
+        this.router.navigate([`/app/productos`]);
       }, error => {
         this.createNotification('error', 'Oops! No se pudo realizar la solicitud', 'Favor intentalo más tarde');
         this.loading = false;
-        this.router.navigate([`/app/dashboard`]);
+        this.router.navigate([`/app/productos`]);
       })
     }
 

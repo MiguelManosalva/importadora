@@ -10,13 +10,13 @@ import { SurveyModule } from "./survey/survey.module";
 
 // Components
 import { PagesComponent } from './pages.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProductComponent } from './product/product.component';
 
 
 @NgModule({
     declarations: [
         PagesComponent,
-        DashboardComponent
+        ProductComponent
     ],
     imports: [
         SurveyModule,

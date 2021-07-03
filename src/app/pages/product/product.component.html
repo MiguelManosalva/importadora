@@ -1,0 +1,26 @@
+<div class="row">
+    <div *ngFor="let product of products" class="col-12 col-xs-6 col-sm-4">
+        <div class="product-grid4">
+            <div class="product-image4">
+                <div class="">
+                    <img class="pic-1 img-fluid" src="https://http2.mlstatic.com/D_NQ_NP_872686-MLC44430275418_122020-O.jpg">
+                    <img class="pic-2 img-fluid" src="https://http2.mlstatic.com/D_NQ_NP_872686-MLC44430275418_122020-O.jpg">
+                </div>
+                <ul class="social">
+                    <li><span (click)="viewDetail()" dspanta-tip="Quick View"><i class="fa fa-eye"></i></span></li>
+                    <li><span (click)="addToCar()" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></span></li>
+                </ul>
+                <span *ngIf="product.ofertaPorcentaje" class="product-new-label">Oferta</span>
+                <span *ngIf="product.ofertaPorcentaje" class="product-discount-label">-{{product.ofertaPorcentaje}}%</span>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><span>{{product.nombre}}</span></h3>
+                <div class="price">
+                    <p class="m-0 d-inline-block mr-2" >${{product.valorUnitario}}</p>
+                    <span *ngIf="product.ofertaPorcentaje">${{product.valorUnitario}}</span>
+                </div>
+                <a class="add-to-cart" href="">AGREGAR AL CARRITO</a>
+            </div>
+        </div>
+    </div>
+</div>

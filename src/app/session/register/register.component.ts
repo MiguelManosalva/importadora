@@ -26,7 +26,7 @@ export class RegisterComponent implements OnInit {
     const userStorage = sessionStorage.getItem('s3s10n3mp4t1');
     if (userStorage) {
       _session.user = JSON.parse(userStorage);
-      this.router.navigate([`/app/dashboard`]);
+      this.router.navigate([`/app/productos`]);
     }
 
   }

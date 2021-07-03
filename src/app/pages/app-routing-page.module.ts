@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PagesComponent } from './pages.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProductComponent } from './product/product.component';
 import { SurveyComponent } from './survey/survey.component';
 
 const routes: Routes = [{
   path: 'app',
   component: PagesComponent,
   children: [
-    { path: 'productos', component: DashboardComponent, data: { titulo: 'Productos' } },
+    { path: 'productos', component: ProductComponent, data: { titulo: 'Productos' } },
     { path: 'pedidos', component: SurveyComponent, data: { titulo: 'Pedidos' } },
     { path: 'bodega', component: SurveyComponent, data: { titulo: 'Bodega' } },
     { path: 'perfil', component: SurveyComponent, data: { titulo: 'Perfil' } },
