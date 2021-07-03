@@ -1,7 +1,6 @@
 <div class="sidebar">
   <div class="sidebar-brand">
-    <img class="img-fluid img-responsive d-md-none d-lg-block" src="../../assets/images/logos/light-large-logo.png" width="200px" />
-    <img class="img-fluid img-responsive d-md-block d-lg-none" src="../../assets/images/logos/light-logo.png" width="200px" />
+    <img class="img-fluid img-responsive d-block" src="../../assets/images/logos/light-logo.png" width="200px" />
 
   </div>
 
@@ -10,7 +9,6 @@
       <li *ngFor="let item of data.menu" class="pl-lg-4 pl-xl-5">
         <a [routerLink]="['/app' + item.url]" routerLinkActive="active">
           <i class="my-auto mr-md-1 mr-lg-2 mr-xl-3" nz-icon [nzType]="'home'" nzTheme="outline"></i>
-          <span class="d-md-none d-lg-inline">{{item.titulo}}</span>
         </a>
       </li>
     </ul>

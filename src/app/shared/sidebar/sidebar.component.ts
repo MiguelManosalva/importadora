@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import data from './data-sidebar.json';
+import data from '../../data/sidebar.json';
 
 @Component({
   selector: 'app-sidebar',

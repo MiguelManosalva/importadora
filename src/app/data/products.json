@@ -1,0 +1,84 @@
+{
+    "products": [
+        {
+            "name": "Cable telefono M13",
+            "descripcion": "",
+            "imagen": "",
+            "stock": 99,
+            "valorUnitario": 11200,
+            "ofertaPorcentaje": 20
+        },
+        {
+            "name": "Monitor LG XM33",
+            "descripcion": "",
+            "imagen": "",
+            "stock": 15,
+            "valorUnitario": 131000,
+            "ofertaPorcentaje": 25
+        },
+        {
+            "name": "Mando PS4 BLUE X8",
+            "descripcion": "",
+            "imagen": "",
+            "stock": 23,
+            "valorUnitario": 2100,
+            "ofertaPorcentaje": 10
+        },
+        {
+            "name": "Luces LED IP3",
+            "descripcion": "",
+            "imagen": "",
+            "stock": 99,
+            "valorUnitario": 6400,
+            "ofertaPorcentaje": 5
+        },
+        {
+            "name": "Teclado mécanico Cougar M13",
+            "descripcion": "",
+            "imagen": "",
+            "stock": 20,
+            "valorUnitario": 31400,
+            "ofertaPorcentaje": 0
+        },
+        {
+            "name": "Audifonos Marshall B9",
+            "descripcion": "",
+            "imagen": "",
+            "stock": 81,
+            "valorUnitario": 51900,
+            "ofertaPorcentaje": 0
+        },
+        {
+            "name": "Soporte Computardo X3",
+            "descripcion": "",
+            "imagen": "",
+            "stock": 38,
+            "valorUnitario": 19000,
+            "ofertaPorcentaje": 0
+        },
+        {
+            "name": "Camara HD 4K MX13",
+            "descripcion": "",
+            "imagen": "",
+            "stock": 92,
+            "valorUnitario": 33200,
+            "ofertaPorcentaje": 0
+        },
+        {
+            "name": "Reloj inteligente UVA 8",
+            "descripcion": "",
+            "imagen": "",
+            "stock": 9,
+            "valorUnitario": 51100,
+            "ofertaPorcentaje": 0
+        },
+        {
+            "name": "Libro digital MV13",
+            "descripcion": "",
+            "imagen": "",
+            "stock": 3,
+            "valorUnitario": 61500,
+            "ofertaPorcentaje": 0
+        }
+    ]
+}
