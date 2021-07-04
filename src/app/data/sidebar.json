@@ -3,21 +3,31 @@
         {
             "titulo": "Productos",
             "url": "/productos",
+            "icon": "sketch",
+            "submenu": []
+        },
+        {
+            "titulo": "Carrito",
+            "url": "/carrito",
+            "icon": "shopping-cart",
             "submenu": []
         },
         {
             "titulo": "Pedidos",
             "url": "/pedidos",
+            "icon": "shopping",
             "submenu": []
         },
         {
             "titulo": "Bodega",
             "url": "/bodega",
+            "icon": "shop",
             "submenu": []
         },
         {
             "titulo": "Perfil",
-            "url": "/pedidos",
+            "url": "/perfil",
+            "icon": "user",
             "submenu": []
         }
     ]

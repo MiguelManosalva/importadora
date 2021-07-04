@@ -1,5 +1,36 @@
+<div class="border mb-4 mx-auto text-center">
+    <ul nz-menu nzMode="horizontal" class="mx-auto">
+        <li nz-menu-item nzSelected>
+          <i nz-icon nzType="crown"></i>
+          Todos los productos
+        </li>
+        <li nz-menu-item>
+          <i nz-icon nzType="sketch"></i>
+          Productos en oferta
+        </li>
+        <li nz-submenu nzTitle="Categorias" nzIcon="unordered-list">
+          <ul>
+            <li nz-menu-group nzTitle="Item 2">
+              <ul>
+                <li nz-menu-item>TV</li>
+                <li nz-menu-item>Smarthpone</li>
+                <li nz-submenu nzTitle="AUDIO">
+                  <ul>
+                    <li nz-menu-item nzDisabled>Audifonos</li>
+                    <li nz-menu-item>Parlantes</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+</div>
+
+
+<!-- Products -->
 <div class="row">
-    <div *ngFor="let product of products" class="col-12 col-xs-6 col-sm-4">
+    <div *ngFor="let product of products" class="col-12 col-xs-6 col-sm-4 col-lg-3 col-xl-2">
         <div class="product-grid4">
             <div class="product-image4">
                 <div class="">
@@ -7,19 +38,20 @@
                     <img class="pic-2 img-fluid" src="https://http2.mlstatic.com/D_NQ_NP_872686-MLC44430275418_122020-O.jpg">
                 </div>
                 <ul class="social">
-                    <li><span (click)="viewDetail()" dspanta-tip="Quick View"><i class="fa fa-eye"></i></span></li>
-                    <li><span (click)="addToCar()" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></span></li>
+                    <li><span (click)="viewDetail(product)" dspanta-tip="Quick View"><i class="fa fa-eye"></i></span></li>
+                    <li><span (click)="addToCar(product)" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></span></li>
                 </ul>
                 <span *ngIf="product.ofertaPorcentaje" class="product-new-label">Oferta</span>
                 <span *ngIf="product.ofertaPorcentaje" class="product-discount-label">-{{product.ofertaPorcentaje}}%</span>
             </div>
             <div class="product-content">
-                <h3 class="title"><span>{{product.nombre}}</span></h3>
+                <h3 class="title"><a (click)="viewDetail(product)">{{product.nombre}}</a></h3>
                 <div class="price">
-                    <p class="m-0 d-inline-block mr-2" >${{product.valorUnitario}}</p>
+                    <p class="m-0 d-inline-block mr-2" >${{product.valorConDescuento}}</p>
                     <span *ngIf="product.ofertaPorcentaje">${{product.valorUnitario}}</span>
+                    <p class="small text-black-50">Por unidad</p>
                 </div>
-                <a class="add-to-cart" href="">AGREGAR AL CARRITO</a>
+                <a class="add-to-cart" (click)="addToCar(product)">AGREGAR AL CARRITO</a>
             </div>
         </div>
     </div>

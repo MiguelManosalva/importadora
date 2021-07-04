@@ -4,9 +4,12 @@ import {
   SettingsService,
   SharedService,
   SidebarService,
-  SessionService
+  SessionService,
+  CartService,
+  ProductService,
+  OrderService,
+  StoreService
 } from './service.index';
-
 @NgModule({
   declarations: [],
   imports: [
@@ -16,7 +19,11 @@ import {
     SettingsService,
     SharedService,
     SidebarService,
-    SessionService
+    SessionService,
+    CartService,
+    ProductService,
+    OrderService,
+    StoreService
   ]
 })
 export class ServiceModule { }

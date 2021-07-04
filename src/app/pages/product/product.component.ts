@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/services/pages/product.service';
 import data from '../../data/products.json';
 
 @Component({
@@ -10,17 +11,19 @@ export class ProductComponent implements OnInit {
 
   public products: any[] = [];
 
-  constructor() { }
+  constructor(private _product: ProductService) { }
 
   ngOnInit(): void {
-    this.products = data.products;
+    this.products = this._product.products;
   }
 
-  public viewDetail(){
-
+  public viewDetail(product: any){
+    console.log("producto: ", product);
   }
 
-  public addToCar() {
+  public addToCar(product: any) {
+    console.log("producto: ", product);
+    
     return null;
   }
 

@@ -11,18 +11,28 @@ import { SurveyModule } from "./survey/survey.module";
 // Components
 import { PagesComponent } from './pages.component';
 import { ProductComponent } from './product/product.component';
+import { OrderComponent } from './order/order.component';
+import { CartComponent } from './cart/cart.component';
+import { ProfileComponent } from './profile/profile.component';
+import { StoreComponent } from './store/store.component';
+import { NgZorroAntdModule } from "../ng-zorro-antd.module";
 
 
 @NgModule({
     declarations: [
         PagesComponent,
-        ProductComponent
+        ProductComponent,
+        OrderComponent,
+        CartComponent,
+        ProfileComponent,
+        StoreComponent
     ],
     imports: [
         SurveyModule,
         CommonModule,
         AppRoutingPageModule,
-        SharedModule
+        SharedModule,
+        NgZorroAntdModule
     ],
     providers: []
 })

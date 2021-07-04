@@ -37,8 +37,8 @@
             "descripcion": "",
             "imagen": "",
             "stock": 20,
-            "valorUnitario": 31400,
-            "ofertaPorcentaje": 0
+            "valorUnitario": 61400,
+            "ofertaPorcentaje": 50
         },
         {
             "nombre": "Audifonos Marshall B9",
@@ -79,6 +79,14 @@
             "stock": 3,
             "valorUnitario": 61500,
             "ofertaPorcentaje": 0
+        },
+        {
+            "nombre": "Smartphone MTK6572",
+            "descripcion": "",
+            "imagen": "",
+            "stock": 13,
+            "valorUnitario": 261500,
+            "ofertaPorcentaje": 20
         }
     ]
 }
