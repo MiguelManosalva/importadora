@@ -30,8 +30,10 @@ export class ProductService {
     public getProducts(request?: any) {
         this.products = data.products.map((item: any) => {
             item.valorConDescuento = item.valorUnitario - (item.valorUnitario * item.ofertaPorcentaje) / 100;
+            item.arrayCantidad = this.createArrayFromNumber(item.stock);
             return item;
         });
+
     }
 
     public addProduct(request: any) {
@@ -40,6 +42,15 @@ export class ProductService {
 
     public removeProduct(request: any) {
         this.products = this.products.filter((product: any) => product != request);
+    }
+
+
+    private createArrayFromNumber( number: number) : any {    
+        let arrNumber = [];
+        for (var i = 1; i <= number; i++) {
+            arrNumber.push(i);
+         }
+        return arrNumber;
     }
 
 }

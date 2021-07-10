@@ -1,1 +1,24 @@
-<p>store works!</p>
+<div class="card">
+    <div class="card-body">
+        <nz-table #basicTable [nzData]="productos">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Descuento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of basicTable.data">
+                <td>{{ data.nombre }}</td>
+                <td>{{ data.stock }}</td>
+                <td>${{ data.valorUnitario }}</td>
+                <td>
+                  %{{ data.ofertaPorcentaje}}
+                </td>
+              </tr>
+            </tbody>
+          </nz-table>
+    </div>
+</div>

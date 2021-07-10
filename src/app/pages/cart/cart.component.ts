@@ -9,14 +9,32 @@ import { CartService } from 'src/app/services/pages/cart.service';
 export class CartComponent implements OnInit {
 
   public cartProducts: any = [];
+  public total: any = 0;
+  public selectedOption = 1;
+  public isBuyed: boolean = false;
 
-  constructor(private _cart: CartService) { 
+  constructor(private _cart: CartService) {
     this.cartProducts = this._cart.cartProducts;
+    this.cartProducts.forEach((item: any) => {
+      this.total += item.valorConDescuento;
+    })
   }
 
   ngOnInit(): void {
   }
 
-  removeProduct(){}
+  updateAmount(product: any) {    
+    this.total = 0;
+    this.cartProducts.forEach((item: any) => {
+      this.total += item.valorConDescuento * product.cantidad;
+    })
+  }
+
+  payOrder(){
+    this.isBuyed = true;
+  }
+
+  removeProduct() { }
+
 
 }

@@ -27,6 +27,7 @@ export class CartService {
     }
 
     public addProduct(request: any) {
+        request.cantidad = 1;
         this.cartProducts.push(request);
         this.total += (request.valorConDescuento * request.cantidad);
     }

@@ -11,6 +11,9 @@ import { NzProgressModule } from 'ng-zorro-antd/progress';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzResultModule } from 'ng-zorro-antd/result';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzStepsModule } from 'ng-zorro-antd/steps';
+import { NzTableModule } from 'ng-zorro-antd/table';
+import { NzDividerModule } from 'ng-zorro-antd/divider';
 @NgModule({
   exports: [
     NzGridModule,
@@ -22,7 +25,10 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
     NzProgressModule,
     NzMenuModule,
     NzResultModule,
-    NzButtonModule
+    NzButtonModule,
+    NzStepsModule,
+    NzTableModule,
+    NzDividerModule
   ]
 })
 export class NgZorroAntdModule {

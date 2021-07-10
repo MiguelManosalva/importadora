@@ -32,6 +32,7 @@ import { NgZorroAntdModule } from "../ng-zorro-antd.module";
         CommonModule,
         AppRoutingPageModule,
         SharedModule,
+        FormsModule,
         NgZorroAntdModule
     ],
     providers: []

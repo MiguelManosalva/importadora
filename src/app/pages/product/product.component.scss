@@ -18,10 +18,10 @@
   display: block;
 }
 .product-grid4 .product-image4 img {
-  width: 100%;
-  height: auto;
+  height: 200px;
 }
 .product-grid4 .pic-1 {
+
   padding: 1rem;
   opacity: 1;
   transition: all 0.5s ease-out 0s;
@@ -31,6 +31,8 @@
 }
 
 .product-grid4 .pic-2 {
+  width: 100%;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
